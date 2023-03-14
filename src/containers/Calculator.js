@@ -92,6 +92,8 @@ function App() {
     setCalculatedTotal(calculatedNumber);
   }
 
+  // dividing number by 0 to display 'error' not 'Infinity' 
+  
   const divide = (number) => {
     if (number === 0) {
       setRunningTotal("error");
